@@ -1,0 +1,239 @@
+/* Overall */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Body tag */
+
+body {
+    scroll-behavior: smooth;
+    background-color:rgb(238, 237, 233)
+}
+
+/* Nav Bar */
+
+nav {
+    position: fixed;
+    margin-top: -120px;
+    background-color: rgb(238, 237, 233);
+    animation: flip 3s forwards;
+}
+section{
+    margin-top: 100px;
+    scroll-margin-top: 100px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(245, 106, 55);
+    padding: 20px;
+    margin-top: 5px;
+    transition: ease-in-out 0.8s;
+}
+
+button {
+    background-color: rgb(245, 106, 55);
+    border-radius: 5px;
+    transition: ease-in-out 0.8s;
+    padding: 10px;
+    margin: 50px 0 0 100px;
+    border-color: rgb(245, 106, 55);
+    color: white;
+    font-size: 18px;
+    width: 150px;
+}
+
+button:hover {
+    background-color: orangered;
+    border-color: orangered;
+    animation: pulse 1s;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+ul li #name {
+    all: unset;
+    margin: 0 150px 0 50px;
+    font-size: 25px;
+    color:black;
+}
+
+/* Furniture section */
+
+#HOME{
+    margin-top: 10px;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    background-image: 
+        url(image1.png),
+        url(image2.png),
+        url(image3.png),
+        url(image4.png);
+    background-repeat: no-repeat;
+    animation: sidebackground 16s linear infinite;
+    height: 400px;
+}
+
+#HOME #center{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin-left: 350px;
+    margin-top: 100px;
+}
+.img img{
+    width: 100px;
+    height: 100px;
+    animation:slideInLeft 1s ease-out ;
+}
+#center h1{
+    font-size: 40px;
+    animation: slideInRight 1s ease-in;
+}
+
+/* Designer Section */
+
+#Designers{
+    margin-top: 100px;
+    animation: fadeIn 2s ease-in;
+}
+#Designers h2{
+    font-size: 40px;
+    color:rgb(245, 106, 55);
+    text-align: center;
+    margin-bottom: 5px;
+}
+#Designers p{
+    font-size: 30px;
+    text-align: center;
+}
+#Designers div{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#Designers button{
+    border-color: rgb(245, 106, 55);
+    color: rgb(245, 106, 55);
+    background-color: white;
+    margin-left: 240px;
+}
+#Designers button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+/* Trends section */
+
+#Trends{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#Trends #main{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+}
+#Trends h3{
+    font-size: 40px;
+    color: rgb(245, 106, 55);
+    margin-bottom: 5px; 
+}
+
+#Trends p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#Trends #italic {
+    font-style: italic;
+    font-size: 25px;
+}
+#Trends button{
+    border-color: rgb(245, 106, 55);
+    color: rgb(245, 106, 55);
+    background-color: white;
+    margin-left: -2px;
+}
+#Trends button:hover{
+    background-color: orangered;
+    color: white;
+}
+#Trends .img{
+    margin-left: 50px;
+}
+#Trends .img img{
+    width: 300px;
+    height: 300px;
+}
+#Trends #main .text{
+    animation: slideInLeft 1s ease-out;
+}
+img:hover {
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slidebackground {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -500% 0;
+    }
+}
+
+
