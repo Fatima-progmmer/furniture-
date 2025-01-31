@@ -235,5 +235,9 @@ img:hover {
         background-position: -500% 0;
     }
 }
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
