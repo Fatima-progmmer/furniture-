@@ -72,7 +72,7 @@ ul li #name {
 
 /* Furniture section */
 
-#HOME{
+/* #HOME{
     margin-top: 10px;
     background-size: 100%;
     background-position: center;
@@ -85,6 +85,22 @@ ul li #name {
     background-repeat: no-repeat;
     animation: sidebackground 16s linear infinite;
     height: 400px;
+} */
+
+#HOME {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundSlide 16s linear infinite;
+}
+
+@keyframes backgroundSlide {
+    0%, 100% { background-image: url('image1.png'); }
+    25% { background-image: url('image2.png'); }
+    50% { background-image: url('image3.png'); }
+    75% { background-image: url('image4.png'); }
 }
 
 #HOME #center{
